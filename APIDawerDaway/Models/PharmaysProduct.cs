@@ -2,7 +2,10 @@
 {
     public class PharmaysProduct
     {
-        public double? PublicPrice { get; set; }
+      
+
+
+        public double? PublicPrice { get; set; } 
         public double? Quantity { get; set; }
         public int? Amount { get; set; }
         public double? PrivatePrice { get; set; }

@@ -50,7 +50,7 @@ namespace APIDawerDaway
         public DbSet<FeedBack> FeedBacks { get; set; }  
         public DbSet<Product> Products { get; set; }
         public DbSet<Pharmacy> pharmacies { get; set; }
-        public DbSet<UserProduct> UserProducts { get; set; }
+        public DbSet<UserProduct> UserProduct { get; set; }
         public DbSet<PharmaysProduct> PharmaysProducts { get; set; }
 
     }

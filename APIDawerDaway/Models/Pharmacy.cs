@@ -6,13 +6,13 @@
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
-        public string Latitude { get; set; }
-        public string Longitude { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
         public string description { get; set; }
-        public bool open24Hours { get; set; }
-        public DateTime openingTime { get; set; }
-        public DateTime closedTime { get; set; }
-        public double rating { get; set; }
+        public bool Open24Hours { get; set; }
+        public DateTime OpeningTime { get; set; }
+        public DateTime ClosingTime { get; set; }
+        public double Rating { get; set; }
 
         // navigation propertiyes
 

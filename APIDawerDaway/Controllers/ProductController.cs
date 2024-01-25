@@ -99,20 +99,20 @@ namespace APIDawerDaway.Controllers
         {
             try
             {
-                var query = _context.Products
-                    .Include(c => c.PharmaysProducts)
-                    .OrderBy(c => c.Id);
+                //var query = _context.Products
+                //    .Include(c => c.PharmaysProducts)
+                //    .OrderBy(c => c.Id);
 
-                var queryString = query.ToQueryString();
-                Console.WriteLine("------------------------------------------------------------------");
-                Console.WriteLine(queryString);
+                //var queryString = query.ToQueryString();
+                //Console.WriteLine("------------------------------------------------------------------");
+                //Console.WriteLine(queryString);
 
 
-                //var products = await _context.Products
-                //    .Include(x => x.PharmaysProducts)
-                //    .ToListAsync();
+                var products = await _context.Products
+                    .Include(x => x.PharmaysProducts)
+                    .ToListAsync();
 
-                var products = await query.ToListAsync();
+                //var products = await query.ToListAsync();
 
                 var response = products.Select(MergedProductsVM.FromProduct);
 
